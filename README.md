@@ -1,27 +1,32 @@
-# IdleNgStarter
+# Angular Starter Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
+The goal of this starter app is to provide a simple way to get started with Angular 2+ while also implementing several key Angular features. The project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
-## Development server
+## Angular Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Properly formed Core & Shared modules
+* Add-Header HttpInterceptor
+* Base Logger service
+* Preload lazy-loading strategy
+* EnsureModuleLoadedOnceGuard for Core module
+* Generic Validator for Reactive Forms
 
-## Code scaffolding
+## Additional Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Development APIs using json-server (edit data\db.json for API)
 
-## Build
+## Possible Future Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* [Bootstrap](https://getbootstrap.com/) integration
+* [FontAwesome](https://fontawesome.com/) integration
+* [Toastr](https://codeseven.github.io/toastr/) integration
 
-## Running unit tests
+## Running the Application
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Install the latest LTS version of Node.js from https://nodejs.org. *IMPORTANT: The server uses ES2015 features AND the Angular CLI so you need a current version of Node.js.*
 
-## Running end-to-end tests
+1. Run `npm install` to install app dependencies
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1. Run `npm run server` and `npm start` in seperate terminal windows -OR- run `npm run dev` to kick both off concurrently
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Go to http://localhost:4200 in your browser

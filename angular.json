@@ -3,17 +3,17 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "idle-ng-starter": {
+    "ng-starter": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "im",
       "schematics": {},
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/idle-ng-starter",
+            "outputPath": "dist/ng-starter",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "idle-ng-starter:build"
+            "browserTarget": "ng-starter:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "idle-ng-starter:build:production"
+              "browserTarget": "ng-starter:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "idle-ng-starter:build"
+            "browserTarget": "ng-starter:build"
           }
         },
         "test": {
@@ -102,7 +102,7 @@
         }
       }
     },
-    "idle-ng-starter-e2e": {
+    "ng-starter-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -111,11 +111,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "idle-ng-starter:serve"
+            "devServerTarget": "ng-starter:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "idle-ng-starter:serve:production"
+              "devServerTarget": "ng-starter:serve:production"
             }
           }
         },
@@ -131,5 +131,5 @@
       }
     }
   },
-  "defaultProject": "idle-ng-starter"
+  "defaultProject": "ng-starter"
 }
